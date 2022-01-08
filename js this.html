@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS this</title>
+  <script>
+    // let sukanya = {
+    //   batch: 'BATCH 11',
+    //   isPresent: true,
+    //   friends: ['Prajakta', 'Pratik', 'Ritesh'],
+    //   hi: function () {
+    //     console.log('Hi')
+    //   }
+    // }
+
+    // let sukanya = {
+    //   batch: 'BATCH 11',
+    //   isPresent: true,
+    //   friends: ['Prajakta', 'Pratik', 'Ritesh'],
+    //   hi: (name) => console.log('Hi ' + name)
+    // }
+
+    // sukanya.hi('Lakshmi')
+
+    // console.log(this) -> Window Object (GLOBAL SCOPE)
+
+    // this -> refers to the owner of that specific method
+
+    // let saurabh = {
+    //   firstName: 'Saurabh',
+    //   lastName: 'Rajput',
+    //   noOfHoursInvestedInJs: 3,
+    //   noOfHoursInvestedInHTMLnCSS: 2,
+    //   fullName: function () {
+    //     // console.log(this) -> saurabh Object
+    //     console.log(this.firstName + ' ' + this.lastName)
+    //   }
+    // }
+
+    // let sudharma = {
+    //   firstName: 'Sudharama',
+    //   lastName: 'Kumar',
+    //   noOfHoursInvestedInJs: 2,
+    //   noOfHoursInvestedInHTMLnCSS: 5,
+    //   fullName: function () {
+    //     return this.firstName + ' ' + this.lastName
+    //   }
+    // }
+
+    // console.log(sudharma.fullName())
+
+    // saurabh.fullName()
+    // sudharma.fullName()
+
+    // function abc(a, b){
+    //   console.log(arguments)
+    // }
+
+    // let abc = (a, b) => {
+    //   console.log(arguments)
+    // }
+
+    // abc('Sai Krishna', 2)
+
+    // Arrow Functions: (Syntactic Sugar)
+    // 1. Arrow Functions are not hoisted
+    // 2. this keyword doesn't work inside arrow functions
+    // 3. arguments keyword doesn't work inside arrow functions
+
+    /* Properties and Methods
+      Properties: batch, isPresent, friends
+      Methods: fullName 
+    */
+
+
+    /*
+      Create an Object
+      - two properties
+      - third property - array with 15 elements (2-100)
+      - create a method: check for all prime numbers present in that array
+    */
+
+    /* 
+      - Iterate through each of array elements
+      - Prime Number logic for each of those elements
+    */
+
+    var arr= [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,88,77,73,93,31]
+var prime = [];
+
+function Prime(num) {
+
+      for (var j = 2; j*j <= num; j++) {
+       if ((num % j) == 0) { 
+        return false;
+       } 
+     }
+     return true;
+}
+for (var i = 0; i < arr.length; i++) {
+  if (Prime(arr[i])) {
+      prime.push(arr[i])
+  }
+}
+
+console.log(prime)
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
