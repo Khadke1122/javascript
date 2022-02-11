@@ -1,0 +1,35 @@
+*{
+background-image: url(beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg);
+}
+.imgBox{
+   background-image: url(original.jpeg);
+   /* position: relative; */
+   top: 8px;
+   height:180px;
+   width: 240px;
+
+   margin: auto auto;
+   cursor: pointer;
+   border-radius: 50%;
+   image-resolution: 100%;
+}
+h1{
+    color: white;
+    margin-left: 300px;
+font-size: 50px;
+}
+
+.fishBox{
+   margin: 10px;
+   display: inline-block;
+   height: 200px;
+   width: 250px;
+   background-color: white;
+   border: 10px solid rgb(250, 194, 10);
+   border-radius: 50%;
+}
+
+
+.hide{
+   display: none;
+}
